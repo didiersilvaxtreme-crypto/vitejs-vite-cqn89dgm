@@ -1,0 +1,185 @@
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,#ffd6e8,#fff0f5);
+  text-align:center;
+}
+
+.scene{
+  display:none;
+  min-height:100vh;
+  padding-top:80px;
+  animation:fadeIn 0.8s ease;
+}
+
+.active{
+  display:block;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+h1,h2,h3{
+  color:#d63384;
+}
+
+p{
+  width:70%;
+  margin:auto;
+  line-height:1.8;
+  font-size:18px;
+}
+
+button{
+  display:block;
+  margin:15px auto;
+  padding:15px 30px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:18px;
+  background:#ff85b3;
+  color:white;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+#gameArea{
+  width:700px;
+  height:400px;
+  background:white;
+  margin:30px auto;
+  border-radius:15px;
+  position:relative;
+  overflow:hidden;
+  border:2px solid pink;
+}
+
+.flower{
+  position:absolute;
+  font-size:35px;
+  cursor:pointer;
+  user-select:none;
+}
+
+#response,
+#response2{
+  margin-top:20px;
+  font-size:20px;
+  color:#d63384;
+}
+
+.letter{
+  width:60%;
+  line-height:2;
+  font-size:19px;
+}
+.photo{
+  width:250px;
+  border-radius:20px;
+  margin-top:20px;
+  box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+
+.bigPhoto{
+  width:320px;
+}
+
+#letterBox{
+  width:70%;
+  margin:30px auto;
+  min-height:200px;
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  text-align:left;
+  line-height:1.8;
+  font-size:20px;
+}
+
+#typingText{
+  color:#444;
+}
+
+#giftBtn{
+  display:none;
+  background:#ff4f8b;
+  font-size:20px;
+  padding:18px 35px;
+  animation:pulse 1.3s infinite;
+}
+@keyframes pulse{
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.08);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+}
+
+.finalMessage{
+  margin-top:25px;
+}
+
+.heart{
+  position:fixed;
+  bottom:-20px;
+  font-size:30px;
+  animation:floatUp 4s linear forwards;
+}
+
+@keyframes floatUp{
+  from{
+    transform:translateY(0);
+    opacity:1;
+  }
+
+  to{
+    transform:translateY(-100vh);
+    opacity:0;
+  }
+}
+.photo{
+  opacity:0;
+  transform:scale(0.92);
+  animation:photoAppear 2s forwards;
+}
+
+@keyframes photoAppear{
+  from{
+    opacity:0;
+    transform:scale(0.92);
+  }
+
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+#cursor{
+  font-size:22px;
+  animation:blink 0.7s infinite;
+}
+
+@keyframes blink{
+  50%{
+    opacity:0;
+  }
+}

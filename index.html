@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Adventure ❤️</title>
+</head>
+
+<body>
+
+  <!-- ESCENA 1 -->
+
+  <div id="scene1" class="scene active">
+
+    <h1>🎂 Feliz cumpleaños 🎂</h1>
+
+    <p>
+
+      Hola corazoncito ✨ <br><br>
+
+      No llevamos mucho tiempo coincidiendo… <br><br>
+
+      de hecho cuando leas esto apenas serán 13 días. <br><br>
+
+      Pero incluso en tan poco tiempo…
+
+      me dieron ganas de hacer algo especial para ti ❤️
+
+    </p>
+
+    <button id="startBtn">
+
+      Comenzar aventura
+
+    </button>
+
+  </div>
+
+
+
+  <!-- ESCENA 2 -->
+
+  <div id="scene2" class="scene">
+
+    <h2>🌸 Recoge 18 flores 🌸</h2>
+
+    <p>
+
+      Hoy cumples 18 años. <br><br>
+
+      Así que recoge 18 flores.
+
+      Una por cada deseo bonito que te mando ❤️
+
+    </p>
+
+    <h3 id="score">
+
+      0 / 18 🌸
+
+    </h3>
+
+    <div id="gameArea"></div>
+
+  </div>
+
+
+
+  <!-- ESCENA 3 -->
+
+  <div id="scene3" class="scene">
+
+    <h2>👀 Pregunta importante</h2>
+
+    <p>
+
+      Veamos si prestas atención 😌
+
+    </p>
+
+    <h3>
+
+      ¿Qué solemos hacer durante horas?
+
+    </h3>
+
+    <button class="wrong">
+
+      Dormir 😴
+
+    </button>
+
+    <button class="correct">
+
+      Hablar por Discord 🎧
+
+    </button>
+
+    <button class="wrong">
+
+      Ignorarnos 📱
+
+    </button>
+
+    <p id="response"></p>
+
+  </div>
+
+
+
+  <!-- ESCENA 4 -->
+
+  <div id="scene4" class="scene">
+
+    <h2>Una más 🎮</h2>
+
+    <h3>
+
+      ¿Qué juego hemos compartido juntos?
+
+    </h3>
+
+    <button class="wrong2">
+
+      Minecraft ⛏️
+
+    </button>
+
+    <button class="correct2">
+
+      Fortnite 🎮
+
+    </button>
+
+    <button class="wrong2">
+
+      Valorant 🔫
+
+    </button>
+
+    <p id="response2"></p>
+
+  </div>
+
+
+
+  <!-- ESCENA 5 -->
+
+  <div id="scene5" class="scene">
+
+    <h1>✨ Esto es para ti ✨</h1>
+  
+    <img src="https://i.ibb.co/prNGTNrb/Ella.png" class="photo">  
+    <div id="letterBox">
+  
+      <p id="typingText"></p>
+      <span id="cursor">▋</span>  
+    </div>
+  
+    <button id="giftBtn">
+  
+      Abrir regalo 🎁
+  
+    </button>
+  
+  </div>
+  
+  
+  
+  <div id="scene6" class="scene">
+  
+    <h1>❤️ Nosotros ❤️</h1>
+  
+    <img src="https://i.ibb.co/Qvr6s5qd/Nosotros.png" class="photo bigPhoto">  
+    <p class="finalMessage">
+  
+      Espero que este pequeño detalle te recuerde
+      lo especial que fue prepararlo para ti ✨
+  
+    </p>
+  
+    <div id="heartsContainer"></div>
+  
+  </div>
+
+  <audio id="finalMusic" hidden loop>
+    <source src="/die-for-you.mp3" type="audio/mpeg">
+  </audio>
+
+  <script type="module" src="/src/main.js"></script>
+
+
+</body>
+</html>
